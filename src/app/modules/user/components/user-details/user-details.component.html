@@ -1,0 +1,4 @@
+<h2 *ngIf="user_details">
+  {{user_details.id}}) {{user_details.name}} => {{user_details.email}}
+  <button (click)="logger(user_details.username)">Login</button>
+</h2>

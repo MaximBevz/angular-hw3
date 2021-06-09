@@ -1,0 +1,9 @@
+<div>
+  <app-user
+    *ngFor="let user of users" [user]="user"
+    (singleUserDetail)="userDetails(user)"
+  ></app-user>
+  <hr/>
+  <app-user-details [user_details]="user_details"></app-user-details>
+</div>
+
